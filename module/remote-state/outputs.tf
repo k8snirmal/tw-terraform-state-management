@@ -18,7 +18,8 @@ output "dynamodb_table" {
   value       = aws_dynamodb_table.lock
 }
 
-output "terraform_iam_policy" {
-  description = "The IAM Policy to access remote state environment."
-  value       = var.terraform_iam_policy_create ? aws_iam_policy.terraform[0] : null
-}
+# Commenting as power user does not have access to create IAM role and IAM Policy
+#output "terraform_iam_policy" {
+#  description = "The IAM Policy to access remote state environment."
+#  value       = var.terraform_iam_policy_create ? aws_iam_policy.terraform[0] : null
+#}

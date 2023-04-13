@@ -17,11 +17,13 @@ module "terraform_remote_state" {
   tags                             = var.tags
 }
 
-resource "aws_iam_user" "terraform" {
-  name = "TerraformUser"
-}
+# Commenting as power user does not have access to create IAM role and IAM Policy
+#resource "aws_iam_user" "terraform" {
+#  name = "TerraformUser"
+#}
 
-resource "aws_iam_user_policy_attachment" "remote_state_access" {
-  user       = aws_iam_user.terraform.name
-  policy_arn = module.terraform_remote_state.terraform_iam_policy.arn
-}
+# Commenting as power user does not have access to create IAM role and IAM Policy
+#resource "aws_iam_user_policy_attachment" "remote_state_access" {
+#  user       = aws_iam_user.terraform.name
+#  policy_arn = module.terraform_remote_state.terraform_iam_policy.arn
+#}

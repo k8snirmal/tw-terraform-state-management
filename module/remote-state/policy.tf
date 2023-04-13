@@ -1,6 +1,8 @@
 #---------------------------------------------------------------------------------------------------
 # IAM Policy
 #---------------------------------------------------------------------------------------------------
+# Commenting as power user does not have access to create IAM role and IAM Policy
+/*
 
 resource "aws_iam_policy" "terraform" {
   count = var.terraform_iam_policy_create ? 1 : 0
@@ -54,3 +56,4 @@ POLICY
 
   tags = var.tags
 }
+*/
