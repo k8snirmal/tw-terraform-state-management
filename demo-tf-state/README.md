@@ -26,6 +26,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_candidate_name"></a> [candidate\_name](#input\_candidate\_name) | Enter your name here | `string` | n/a | yes |
 | <a name="input_region"></a> [region](#input\_region) | default region | `string` | `"ap-south-1"` | no |
 | <a name="input_vpc_cidr"></a> [vpc\_cidr](#input\_vpc\_cidr) | default vpc\_cidr\_block | `string` | `"172.16.0.0/16"` | no |
 

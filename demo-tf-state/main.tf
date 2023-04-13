@@ -4,6 +4,6 @@ resource "aws_vpc" "demo-vpc" {
 
   tags = {
     Project = "Terraform state management"
-    Name    = "Demo VPC"
+    Name    = "${var.candidate_name}-vpc"
   }
 }

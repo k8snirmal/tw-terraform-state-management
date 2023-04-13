@@ -9,3 +9,8 @@ variable "vpc_cidr" {
   default     = "172.16.0.0/16"
   description = "default vpc_cidr_block"
 }
+
+variable "candidate_name" {
+  type        = string
+  description = "Enter your name here"
+}
