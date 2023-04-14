@@ -20,7 +20,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [aws_vpc.demo-vpc](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc) | resource |
+| [aws_vpc.demo_vpc](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc) | resource |
 
 ## Inputs
 
