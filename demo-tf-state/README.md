@@ -1,3 +1,20 @@
+
+## Instruction to run the terraform  with remote backend created in the previous demo
+
+1) Change directory to demo-tf-state `cd demo-tf-state`
+
+2) Update `candidate_name` in terraform.tfvars with your name.
+
+3) Update  backend.tfvars with `bucket`, `key` and `dynamodb_table` which was created in the previous module.
+
+4) Run `make init` command to initialize working directory by creating initial files, loading any remote state, downloading modules, etc.
+
+5) Run `make plan` to generate a speculative execution plan.
+
+6) Run `make apply` to provision the required resources.
+
+Note: Remember to run `make destory` to delete all the resource created by these module once you are done all activities to avoid charges
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 

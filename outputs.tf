@@ -7,3 +7,8 @@ output "state_bucket" {
   description = "The S3 bucket to store the remote state file."
   value       = module.terraform_remote_state.state_bucket.bucket
 }
+
+output "dynamodb_table" {
+  description = "The DynamoDB table for locking."
+  value       = module.terraform_remote_state.dynamodb_table.id
+}

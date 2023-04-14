@@ -1,3 +1,20 @@
+
+# tw-terraform-state-management
+
+## Instruction to setup the remote state on AWS
+
+1) git clone https://github.com/techops-recsys-infra-hiring/tw-terraform-state-management
+
+2) Update `state_bucket_prefix` and `dynamodb_table_name` in terraform.tfvars with name of s3 bucket and dynamoDB table that you want to create.
+
+3) Run `make init` command to initialize working directory by creating initial files, loading any remote state, downloading modules, etc.
+
+4) Run `make plan` to generate a speculative execution plan.
+
+5) Run `make apply` to create the required resources for backend setup.
+
+Note: Remember to run `make destory` to delete all the resource created by these module once you are done all activities to avoid charges
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
