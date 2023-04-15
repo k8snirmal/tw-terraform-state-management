@@ -1,3 +1,3 @@
-region         = "ap-south-1"
+region         = "us-east-1"
 vpc_cidr       = "172.16.0.0/16"
-candidate_name = "Rahul"
+candidate_name = "Nirmal"
